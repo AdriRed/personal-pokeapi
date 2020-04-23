@@ -11,13 +11,13 @@ dev-install:  # Install developer requirements + base requirements
 	pip install -r test-requirements.txt
 
 setup:  # Set up the project database
-	python manage.py migrate --settings=config.local
+	python3 manage.py migrate --settings=config.local
 
 wipe_db:  # Delete's the project database
 	rm -rf db.sqlite3
 
 serve:  # Run the project locally
-	python manage.py runserver --settings=config.local
+	python3 manage.py runserver --settings=config.local
 
 test:  # Run tests
 	python manage.py test --settings=config.local
@@ -29,7 +29,7 @@ migrate:  # run any outstanding migrations
 	python manage.py migrate --settings=config.local
 
 shell:  # Load a shell
-	python manage.py shell --settings=config.local
+	python3 manage.py shell --settings=config.local
 
 format:  # Format the source code
 	black .

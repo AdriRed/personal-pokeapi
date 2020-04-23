@@ -62,7 +62,7 @@ DATABASES = {
         "NAME": "pokeapi_co_db",
         "USER": "root",
         "PASSWORD": "pokeapi",
-        "HOST": "localhost",
+        "HOST": "192.168.0.21",
         "PORT": "",
         "CONN_MAX_AGE": 30,
     }
